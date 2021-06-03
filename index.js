@@ -8,7 +8,7 @@ app.use(express.json());
 
 // Routes
 app.get("/", (req, res) => {
-  return res.send("**SERVER IS LIVE**");
+  res.send("**SERVER IS LIVE**");
 });
 
 function calcMonthlyInstallment(shoppingCredit, plan) {
